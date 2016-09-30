@@ -16,8 +16,15 @@
  * @param {Object} config init parameters
  */
 function Gettext ( config ) {
-    var data = config.data,
-        meta = config.meta;
+    var data, meta;
+
+    // sanitize
+    config   = config || {};
+    data     = config.data || {};
+    data[''] = data[''] || {};
+
+    // shortcut
+    meta = config.meta;
 
     /**
      * Display the native language translation of a textual message.
@@ -27,7 +34,7 @@ function Gettext ( config ) {
      * @return {string} translated text
      */
     this.gettext = function ( msgId ) {
-        return data && data[''][msgId] ? data[''][msgId] : msgId;
+        return data[''][msgId] || msgId;
     };
 
 
@@ -40,7 +47,7 @@ function Gettext ( config ) {
      * @return {string} translated text
      */
     this.pgettext = function ( context, msgId ) {
-        return data && data[context][msgId] ? data[context][msgId] : msgId;
+        return data[context] && data[context][msgId] || msgId;
     };
 
 
