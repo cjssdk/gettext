@@ -1,0 +1,30 @@
+{
+    "name": "cjs-gettext",
+    "version": "1.0.0",
+    "description": "Application localization tools.",
+    "author": {
+        "name": "Stanislav Kalashnik",
+        "email": "darkpark.main@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cjssdk/gettext.git"
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "test": "npm run lint",
+        "jsdoc": "jsdoc --destination doc *.js readme.md"
+    },
+    "devDependencies": {
+        "eslint": "3.*.*",
+        "cjs-eslint-config": "cjssdk/eslint-config"
+    },
+    "keywords": [
+        "cjs",
+        "cjssdk",
+        "framework",
+        "gettext",
+        "localization"
+    ],
+    "license": "MIT"
+}
