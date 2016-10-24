@@ -1,10 +1,12 @@
 STB SDK localization
 ====================
 
-[![Build Status](https://img.shields.io/travis/cjssdk/gettext.svg?style=flat-square)](https://travis-ci.org/cjssdk/gettext)
-[![NPM version](https://img.shields.io/npm/v/cjs-gettext.svg?style=flat-square)](https://www.npmjs.com/package/cjs-gettext)
-[![Dependencies Status](https://img.shields.io/david/cjssdk/gettext.svg?style=flat-square)](https://david-dm.org/cjssdk/gettext)
+[![build status](https://img.shields.io/travis/cjssdk/gettext.svg?style=flat-square)](https://travis-ci.org/cjssdk/gettext)
+[![npm version](https://img.shields.io/npm/v/cjs-gettext.svg?style=flat-square)](https://www.npmjs.com/package/cjs-gettext)
+[![dependencies status](https://img.shields.io/david/cjssdk/gettext.svg?style=flat-square)](https://david-dm.org/cjssdk/gettext)
+[![devDependencies status](https://img.shields.io/david/dev/cjssdk/gettext.svg?style=flat-square)](https://david-dm.org/cjssdk/gettext?type=dev)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-blue.svg?style=flat-square)](https://gitter.im/DarkPark/cjssdk)
+[![RunKit](https://img.shields.io/badge/RunKit-try-yellow.svg?style=flat-square)](https://runkit.com/npm/cjs-gettext)
 
 
 This localization module is an instance of [Emitter](https://github.com/cjssdk/emitter) module.
@@ -20,7 +22,7 @@ npm install cjs-gettext
 
 ## Usage ##
 
-Add constructor to the scope and create an instance with some data:
+Add the constructor to the scope and create an instance with some data:
 
 ```js
 var Gettext = require('cjs-gettext'),
