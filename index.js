@@ -67,7 +67,9 @@ function Gettext ( config ) {
         var n;
 
         if ( DEVELOP ) {
-            if ( Number(value) !== value ) { throw new Error(__filename + ': value must be a number'); }
+            if ( Number(value) !== value ) {
+                throw new Error(__filename + ': value must be a number');
+            }
         }
 
         if ( data && meta ) {
