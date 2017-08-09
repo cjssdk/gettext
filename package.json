@@ -1,6 +1,6 @@
 {
     "name": "cjs-gettext",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Application localization tools.",
     "author": {
         "name": "Stanislav Kalashnik",
