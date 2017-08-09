@@ -72,7 +72,7 @@ function Gettext ( config ) {
             }
         }
 
-        if ( data && meta ) {
+        if ( data && meta && data[''][msgId] ) {
             // translation
             return data[''][msgId][eval('n = ' + value + '; ' + meta.plural)];
         }
