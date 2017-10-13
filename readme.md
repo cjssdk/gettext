@@ -22,6 +22,34 @@ npm install cjs-gettext
 
 ## Usage ##
 
+Example `data` format:
+
+```json
+{
+    "meta": {
+        "charset": "utf-8",
+        "project": "downloads",
+        "language": "ru",
+        "plural": "(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)"
+    },
+    "data": {
+        "": {
+            "some text": "некоторый текст",
+            "Close": "Закрыть",
+            "Error": "Ошибка",
+            "File name:": "Имя файла:",
+        },
+        "some context": {
+            "some text": "Лирика",
+            "Close": "Выйти",
+            "Error": "Недопустимое действие",
+        }
+
+    }
+}
+```
+
+
 Add the constructor to the scope and create an instance with some data:
 
 ```js
@@ -32,7 +60,7 @@ var Gettext = require('cjs-gettext'),
 Then it's possible to make direct calls to make simple replacement:
 
 ```js
-console.log(gettext.gettext('some line to be localized'));
+console.log(gettext.gettext('Close'));
 ```
 
 Fetch a particular translation of the textual message:
