@@ -16,8 +16,9 @@
         "jsdoc": "jsdoc --destination docs *.js readme.md"
     },
     "devDependencies": {
+        "cjs-eslint-config": "1.*.*",
         "eslint": "4.*.*",
-        "cjs-eslint-config": "1.*.*"
+        "jsdoc": "3.*.*"
     },
     "keywords": [
         "cjs",
