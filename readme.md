@@ -2,11 +2,11 @@ STB SDK localization
 ====================
 
 [![build status](https://img.shields.io/travis/cjssdk/gettext.svg?style=flat-square)](https://travis-ci.org/cjssdk/gettext)
-[![npm version](https://img.shields.io/npm/v/cjs-gettext.svg?style=flat-square)](https://www.npmjs.com/package/cjs-gettext)
+[![npm version](https://img.shields.io/npm/v/@cjssdk/gettext.svg?style=flat-square)](https://www.npmjs.com/package/@cjssdk/gettext)
 [![dependencies status](https://img.shields.io/david/cjssdk/gettext.svg?style=flat-square)](https://david-dm.org/cjssdk/gettext)
 [![devDependencies status](https://img.shields.io/david/dev/cjssdk/gettext.svg?style=flat-square)](https://david-dm.org/cjssdk/gettext?type=dev)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-blue.svg?style=flat-square)](https://gitter.im/DarkPark/cjssdk)
-[![RunKit](https://img.shields.io/badge/RunKit-try-yellow.svg?style=flat-square)](https://npm.runkit.com/cjs-gettext)
+[![RunKit](https://img.shields.io/badge/RunKit-try-yellow.svg?style=flat-square)](https://npm.runkit.com/@cjssdk/gettext)
 
 
 This localization module is an instance of [Emitter](https://github.com/cjssdk/emitter) module.
@@ -16,7 +16,7 @@ Contains localization messages data used by other modules and provides methods t
 ## Installation ##
 
 ```bash
-npm install cjs-gettext
+npm install @cjssdk/gettext
 ```
 
 
@@ -53,7 +53,7 @@ Example `data` format:
 Add the constructor to the scope and create an instance with some data:
 
 ```js
-var Gettext = require('cjs-gettext'),
+var Gettext = require('@cjssdk/gettext'),
     gettext = new Gettext(data);
 ```
 
@@ -89,4 +89,4 @@ according to the contribution [rules](.github/contributing.md).
 
 ## License ##
 
-`cjs-gettext` is released under the [MIT License](license.md).
+`@cjssdk/gettext` is released under the [MIT License](license.md).
