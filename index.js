@@ -64,7 +64,7 @@ function Gettext ( config ) {
         /* eslint no-unused-vars: 0 */
         /* eslint no-eval: 0 */
         /* eslint id-length: 0 */
-        var n;
+        var n, evalResult;
 
         if ( DEVELOP ) {
             if ( Number(value) !== value ) {
@@ -73,8 +73,14 @@ function Gettext ( config ) {
         }
 
         if ( data && meta && data[''][msgId] ) {
+            evalResult = eval('n = ' + value + '; ' + meta.plural);
+
+            if ( typeof evalResult === 'boolean' ) {
+                evalResult = +evalResult;
+            }
+
             // translation
-            return data[''][msgId][eval('n = ' + value + '; ' + meta.plural)];
+            return data[''][msgId][evalResult];
         }
 
         // english
