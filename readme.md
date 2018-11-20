@@ -37,14 +37,13 @@ Example `data` format:
             "some text": "некоторый текст",
             "Close": "Закрыть",
             "Error": "Ошибка",
-            "File name:": "Имя файла:",
+            "File name:": "Имя файла:"
         },
         "some context": {
             "some text": "Лирика",
             "Close": "Выйти",
-            "Error": "Недопустимое действие",
+            "Error": "Недопустимое действие"
         }
-
     }
 }
 ```
