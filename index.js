@@ -11,9 +11,9 @@
 /**
  * Translations handler.
  *
- * @constructor
+ * @class
  *
- * @param {Object} config init parameters
+ * @param {Object} config - init parameters
  */
 function Gettext ( config ) {
     var data, meta;
@@ -29,7 +29,7 @@ function Gettext ( config ) {
     /**
      * Display the native language translation of a textual message.
      *
-     * @param {string} msgId textual message
+     * @param {string} msgId - textual message
      *
      * @return {string} translated text
      */
@@ -41,8 +41,8 @@ function Gettext ( config ) {
     /**
      * The "p" in "pgettext" stands for "particular": fetches a particular translation of the textual message.
      *
-     * @param {string} context message context
-     * @param {string} msgId textual message
+     * @param {string} context - message context
+     * @param {string} msgId - textual message
      *
      * @return {string} translated text
      */
@@ -54,9 +54,9 @@ function Gettext ( config ) {
     /**
      * Display the native language translation of a textual message whose grammatical form depends on a number.
      *
-     * @param {string} msgId textual message in a singular form
-     * @param {string} plural textual message in a plural form
-     * @param {number} value message number
+     * @param {string} msgId - textual message in a singular form
+     * @param {string} plural - textual message in a plural form
+     * @param {number} value - message number
      *
      * @return {string} translated text
      */
@@ -64,7 +64,7 @@ function Gettext ( config ) {
         /* eslint no-unused-vars: 0 */
         /* eslint no-eval: 0 */
         /* eslint id-length: 0 */
-        var n, evalResult;
+        var temp, evalResult;
 
         if ( DEVELOP ) {
             if ( Number(value) !== value ) {
@@ -73,7 +73,7 @@ function Gettext ( config ) {
         }
 
         if ( data && meta && data[''][msgId] ) {
-            evalResult = eval('n = ' + value + '; ' + meta.plural);
+            evalResult = eval('temp = ' + value + '; ' + meta.plural);
 
             if ( typeof evalResult === 'boolean' ) {
                 evalResult = +evalResult;
